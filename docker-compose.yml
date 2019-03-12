@@ -1,0 +1,16 @@
+version: "3"
+volumes:
+  aws-credential:
+services:
+  sts-output-credential:
+    build: .
+    env_file:
+      - ./config/aws.env
+    environment:
+      - DAEMON=1
+    volumes:
+      - aws-credential:/workspace/.aws
+  aws-cli:
+    image: mesosphere/aws-cli
+    volumes:
+      - aws-credential:/root/.aws

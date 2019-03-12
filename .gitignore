@@ -1,0 +1,4 @@
+config/*
+!config/aws.env.sample
+example/*
+!.gitkeep
