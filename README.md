@@ -16,7 +16,7 @@ $ docker run \
   -v `pwd`/data:/workspace/.aws \
   -e AWS_ACCESS_KEY_ID=[YOUR ACCESS KEY] \
   -e AWS_SECRET_ACCESS_KEY=[YOUR SECRET ACCESS KEY] \
-  iwanomoto/sts-output-credential \
+  kkhs/sts-output-credential \
   [YOUR ROLE ARN]
 ```
 
@@ -28,7 +28,7 @@ $ docker run \
   -e AWS_ACCESS_KEY_ID=[YOUR ACCESS KEY] \
   -e AWS_SECRET_ACCESS_KEY=[YOUR SECRET ACCESS KEY] \
   -e DAEMON=1 \
-  iwanomoto/sts-output-credential \
+  kkhs/sts-output-credential \
   [YOUR ROLE ARN]
 ```
 
@@ -40,7 +40,7 @@ $ docker run \
   -e AWS_ACCESS_KEY_ID=[YOUR ACCESS KEY] \
   -e AWS_SECRET_ACCESS_KEY=[YOUR SECRET ACCESS KEY] \
   -e ROLE_ARN=[YOUR ROLE ARN] \
-  iwanomoto/sts-output-credential
+  kkhs/sts-output-credential
 ```
 
 ## Environment
